@@ -43,4 +43,4 @@ yarn start;
 
 Notice:
  - Make sure that the port 8080 free before running React application
- - For correct working you need last version of Node.js server
+ - For correct working you need the last version of Node.js server
