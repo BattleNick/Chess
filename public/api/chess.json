@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "name": "Rook",
+    "img": "Chess_Black_Rook",
+    "position": "A8",
+    "type": "black"
+  },
+  {
+    "id": 2,
+    "name": "Knight",
+    "img": "Chess_Black_Knight",
+    "position": "B8",
+    "type": "black"
+  },
+  {
+    "id": 3,
+    "name": "Bishop",
+    "img": "Chess_Black_Bishop",
+    "position": "C8",
+    "type": "black"
+  },
+  {
+    "id": 4,
+    "name": "Queen",
+    "img": "Chess_Black_Queen",
+    "position": "D8",
+    "type": "black"
+  },
+  {
+    "id": 5,
+    "name": "King",
+    "img": "Chess_Black_King",
+    "position": "E8",
+    "type": "black"
+  },
+  {
+    "id": 6,
+    "name": "Bishop",
+    "img": "Chess_Black_Bishop",
+    "position": "F8",
+    "type": "black"
+  },
+  {
+    "id": 7,
+    "name": "Knight",
+    "img": "Chess_Black_Knight",
+    "position": "G8",
+    "type": "black"
+  },
+  {
+    "id": 8,
+    "name": "Rook",
+    "img": "Chess_Black_Rook",
+    "position": "H8",
+    "type": "black"
+  },
+  {
+    "id": 9,
+    "name": "Pawn",
+    "img": "Chess_Black_Pawn",
+    "position": "A7",
+    "type": "black"
+  },
+  {
+    "id": 10,
+    "name": "Pawn",
+    "img": "Chess_Black_Pawn",
+    "position": "B7",
+    "type": "black"
+  },
+  {
+    "id": 11,
+    "name": "Pawn",
+    "img": "Chess_Black_Pawn",
+    "position": "C7",
+    "type": "black"
+  },
+  {
+    "id": 12,
+    "name": "Pawn",
+    "img": "Chess_Black_Pawn",
+    "position": "D7",
+    "type": "black"
+  },
+  {
+    "id": 13,
+    "name": "Pawn",
+    "img": "Chess_Black_Pawn",
+    "position": "E7",
+    "type": "black"
+  },
+  {
+    "id": 14,
+    "name": "Pawn",
+    "img": "Chess_Black_Pawn",
+    "position": "F7",
+    "type": "black"
+  },
+  {
+    "id": 15,
+    "name": "Pawn",
+    "img": "Chess_Black_Pawn",
+    "position": "G7",
+    "type": "black"
+  },
+  {
+    "id": 16,
+    "name": "Pawn",
+    "img": "Chess_Black_Pawn",
+    "position": "H7",
+    "type": "black"
+  },
+  {
+    "id": 17,
+    "name": "Rook",
+    "img": "Chess_White_Rook",
+    "position": "A1",
+    "type": "white"
+  },
+  {
+    "id": 18,
+    "name": "Knight",
+    "img": "Chess_White_Knight",
+    "position": "B1",
+    "type": "white"
+  },
+  {
+    "id": 19,
+    "name": "Bishop",
+    "img": "Chess_White_Bishop",
+    "position": "C1",
+    "type": "white"
+  },
+  {
+    "id": 20,
+    "name": "Queen",
+    "img": "Chess_White_Queen",
+    "position": "D1",
+    "type": "white"
+  },
+  {
+    "id": 21,
+    "name": "King",
+    "img": "Chess_White_King",
+    "position": "E1",
+    "type": "white"
+  },
+  {
+    "id": 22,
+    "name": "Bishop",
+    "img": "Chess_White_Bishop",
+    "position": "F1",
+    "type": "white"
+  },
+  {
+    "id": 23,
+    "name": "Knight",
+    "img": "Chess_White_Knight",
+    "position": "G1",
+    "type": "white"
+  },
+  {
+    "id": 24,
+    "name": "Rook",
+    "img": "Chess_White_Rook",
+    "position": "H1",
+    "type": "white"
+  },
+  {
+    "id": 25,
+    "name": "Pawn",
+    "img": "Chess_White_Pawn",
+    "position": "A2",
+    "type": "white"
+  },
+  {
+    "id": 26,
+    "name": "Pawn",
+    "img": "Chess_White_Pawn",
+    "position": "B2",
+    "type": "white"
+  },
+  {
+    "id": 27,
+    "name": "Pawn",
+    "img": "Chess_White_Pawn",
+    "position": "C2",
+    "type": "white"
+  },
+  {
+    "id": 28,
+    "name": "Pawn",
+    "img": "Chess_White_Pawn",
+    "position": "D2",
+    "type": "white"
+  },
+  {
+    "id": 29,
+    "name": "Pawn",
+    "img": "Chess_White_Pawn",
+    "position": "E2",
+    "type": "white"
+  },
+  {
+    "id": 30,
+    "name": "Pawn",
+    "img": "Chess_White_Pawn",
+    "position": "F2",
+    "type": "white"
+  },
+  {
+    "id": 31,
+    "name": "Pawn",
+    "img": "Chess_White_Pawn",
+    "position": "G2",
+    "type": "white"
+  },
+  {
+    "id": 32,
+    "name": "Pawn",
+    "img": "Chess_White_Pawn",
+    "position": "H2",
+    "type": "white"
+  }
+]
