@@ -1,0 +1,334 @@
+@import '_variables';
+@import '_reset';
+
+/*chess_desk*/
+.chess_desck_wrapper {
+  position: relative;
+  max-width: 100vh;
+  max-height: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+}
+
+.chess_desk {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  top: 50vh;
+  transform: translateY(-50%);
+  position: absolute;
+  overflow: hidden;
+
+  .desk_literals {
+
+    ul {
+      display: flex;
+      flex-direction: row;
+     
+      li {
+        width: $cell-size-width;
+        height: $cell-size-height;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:after {
+          content: "";
+          display: block;
+          padding-bottom: 100%;
+        }
+      }
+    }
+  }
+
+  .desk_center {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+    .desk_numbers {
+      width: 10%;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+       
+        li {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+          }
+        }
+      }
+    }
+  
+    .desk_table {
+      width: 80%;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+    
+        li {
+          width: 12.5%;
+          height: 12.5%;
+          background: $light-block;
+
+          &:after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+          }
+    
+          &:nth-child(2n) {
+            background: $dark-block;
+          }
+        }
+    
+        &:nth-child(2n) {
+          
+          li {
+            background: $dark-block;
+      
+            &:nth-child(2n) {
+              background: $light-block;
+            }
+          }
+        }
+      }
+    }
+
+    .desk_table_positions {
+      position: absolute;
+      width: 80%;
+      height: 100%;
+      z-index: 1;
+      top: 0;
+      left: $cell-size-width;
+
+      li {
+        width: 12.5% !important;
+        height: 12.5% !important;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        position: absolute;
+
+        &.active {
+          z-index: 3;
+
+          &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(100% - 4px);
+            height: calc(100% - 4px);
+            border: 2px solid $active-chess-aoutline;
+          }
+
+          .variant {
+            width: 100%;
+            height: 100%;
+            opacity: .5;
+            transition: opacity $transition-3 ease-in-out;
+
+            &:hover {
+              cursor: pointer;
+              opacity: .9;
+            }
+          }
+        }
+
+        .variant {
+          position: absolute;
+          z-index: 2;
+          opacity: 0;
+        }
+
+        button {
+          display: block;
+          cursor: pointer;
+          background: transparent;
+          border: none;
+          width: 100% !important;
+          height: 100% !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            max-width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*toogler*/
+.toogler {
+  display: flex;
+  background: none;
+  border: none;
+  width: 35%;
+  padding-bottom: 30%;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  z-index: 999;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+
+  span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: $base-color;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+
+    &:nth-child(1) {
+      top: 0px;
+    }
+    
+    &:nth-child(2), &:nth-child(3) {
+      top: calc(50% - 1px);
+    }
+
+    &:nth-child(4) {
+      top: calc(100% - 2px);
+    }
+  }
+
+  &.open {
+
+    span {
+
+      &:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
+
+      &:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
+
+      &:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+
+      &:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
+    }
+  }
+}
+
+/*menu*/
+.menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  background: $menu-background;
+  width: 50%;
+  min-height: 100%;
+  transform: translateX(-100%);
+  transition: transform $transition-3 ease-in-out;
+
+  &.open {
+    transform: translateX(0);
+    transition: transform $transition-3 ease-in-out;
+  }
+
+  button {
+    width: 80%;
+    border: none;
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    background-color: $base-color;
+    color: $light-block;
+    border: 1px solid;
+    border-color: $light-block;
+    transition: background-color,color,border-color $transition-3 ease-in-out;
+
+    &:hover {
+      background-color: $light-block;
+      color: $base-color;
+      border-color: $base-color;
+    }
+  }
+}
+
+/*overlay*/
+.overlay {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  right: 0;
+  background: $overlay;
+  width: 50%;
+  min-height: 100%;
+  transform: translateX(calc(100% + 2px));
+  transition: transform $transition-3 ease-in-out;
+
+  &.open {
+    transform: translateX(0);
+    transition: transform $transition-3 ease-in-out;
+  }
+}
