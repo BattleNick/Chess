@@ -34,7 +34,7 @@ PORT=3000 npm start
 ```
 - For React application running:
 
-You need open "client" directory in new console, then:
+You need open "your_directory/chess/client" directory in new console, then:
 
 ```
 yarn start
