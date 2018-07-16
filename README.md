@@ -30,14 +30,14 @@ Now you need run Node.js server and React application:
 cd ../
 ```
 ```
-PORT=3000 npm start;
+PORT=3000 npm start
 ```
 - For React application running:
 
 You need open "client" directory in new console, then:
 
 ```
-yarn start;
+yarn start
 ```
 
 Notice:
