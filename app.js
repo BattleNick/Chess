@@ -5,14 +5,15 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var chessRouter = require('./routes/chess');
+var chessIndex = require('./routes/index');
 var chessSaveRouter = require('./routes/chess-save');
 var chessLoadRouter = require('./routes/chess-load');
 
 var app = express();
 
 // view engine setup
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -39,6 +40,7 @@ app.use(function (req, res, next) {
   next();
 });
 
+app.use('/', chessIndex);
 app.use('/chess', chessRouter);
 app.use('/chess-save', chessSaveRouter);
 app.use('/chess-load', chessLoadRouter);
