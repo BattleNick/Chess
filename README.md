@@ -16,7 +16,7 @@ yarn
 ```
 
 ```
-cd clients
+cd client
 ```
 
 ```
@@ -34,9 +34,8 @@ PORT=3000 npm start;
 ```
 - For React application running:
 
-```
-cd clients
-```
+You need open "client" directory in new console, then:
+
 ```
 yarn start;
 ```
